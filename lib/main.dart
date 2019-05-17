@@ -64,13 +64,13 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(top: 20.0),
-                child: Image.asset("assets/image_01.png"),
+                padding: EdgeInsets.only(top: 104.0),
+                child: Image.asset("assets/building.png"),
               ),
               Expanded(
                 child: Container(),
               ),
-              Image.asset("assets/image_02.png")
+              // Image.asset("assets/image_02.png")
             ],
           ),
           SingleChildScrollView(
@@ -81,11 +81,11 @@ class _MyAppState extends State<MyApp> {
                   Row(
                     children: <Widget>[
                       Image.asset(
-                        "assets/logo.png",
-                        width: ScreenUtil.getInstance().setWidth(110),
-                        height: ScreenUtil.getInstance().setHeight(110),
+                        "assets/slogo.png",
+                        width: ScreenUtil.getInstance().setWidth(100),
+                        height: ScreenUtil.getInstance().setHeight(100),
                       ),
-                      Text("LOGO",
+                      Text("STASHKO",
                           style: TextStyle(
                               fontFamily: "Poppins-Bold",
                               fontSize: ScreenUtil.getInstance().setSp(46),
@@ -124,13 +124,13 @@ class _MyAppState extends State<MyApp> {
                           height: ScreenUtil.getInstance().setHeight(100),
                           decoration: BoxDecoration(
                               gradient: LinearGradient(colors: [
-                                Color(0xFF17ead9),
-                                Color(0xFF6078ea)
+                                Color(0xFF28c102),
+                                Color(0xFF28c101)
                               ]),
                               borderRadius: BorderRadius.circular(6.0),
                               boxShadow: [
                                 BoxShadow(
-                                    color: Color(0xFF6078ea).withOpacity(.3),
+                                    color: Color(0xFF28c101).withOpacity(.3),
                                     offset: Offset(0.0, 8.0),
                                     blurRadius: 8.0)
                               ]),
@@ -139,7 +139,7 @@ class _MyAppState extends State<MyApp> {
                             child: InkWell(
                               onTap: () {},
                               child: Center(
-                                child: Text("SIGNIN",
+                                child: Text("SIGN-IN",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontFamily: "Poppins-Bold",
